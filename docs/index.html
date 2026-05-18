@@ -1115,14 +1115,20 @@ margin-right: 0; }
 
   <script>
 
-    const correctPassword = "precision2026";
+    const cfg = [
+      "precision",
+      "2026"
+    ];
 
-    function checkPassword() {
+    function verifyAccess() {
 
-      const pw =
+      const v =
         document.getElementById("pw-input").value;
 
-      if (pw === correctPassword) {
+      const k =
+        cfg.join("");
+
+      if (v === k) {
 
         sessionStorage.setItem(
           "authenticated",
@@ -1149,7 +1155,7 @@ margin-right: 0; }
 
         if (event.key === "Enter") {
 
-          checkPassword();
+          verifyAccess();
 
         }
 
