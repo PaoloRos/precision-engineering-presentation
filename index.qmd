@@ -1,0 +1,9 @@
+---
+title: "Design and Characterization of a Precision Motion System"
+subtitle: "Course of Design of Precision Engineering"
+author: "Group C"
+
+date: today
+date-format: "D MMMM YYYY"
+---
+

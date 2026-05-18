@@ -1,0 +1,158 @@
+/* =========================
+   TESTO GENERALE
+   ========================= */
+
+.reveal {
+  font-size: 38px;
+  line-height: 1.25;
+  color: #111;
+}
+
+/* =========================
+   TITOLI DELLE SLIDE
+   ========================= */
+   
+/* titoli slide normali */
+.reveal .slides section h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 40px;
+}
+
+.reveal .slides section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 320px;
+  height: 6px;
+
+  background: #b00020;
+  border-radius: 4px;
+}
+
+/* slide con titolo h1, come quella finale */
+.reveal .slides section h1:not(.title) {
+  font-size: 1.9em;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 40px;
+}
+
+.reveal .slides section h1:not(.title)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 320px;
+  height: 6px;
+
+  background: #b00020;
+  border-radius: 4px;
+}
+
+/* =========================
+   LISTE
+   ========================= */
+
+.reveal ul {
+  margin-top: 30px;
+}
+
+.reveal li {
+  margin-bottom: 16px;
+}
+
+/* =========================
+   IMMAGINI
+   ========================= */
+
+.reveal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   LOGO UNITN
+   ========================= */
+
+.reveal::after {
+  content: "";
+  position: fixed;
+
+  top: 35px;
+  right: 50px;
+
+  width: 240px;
+  height: 80px;
+
+  background-image: url("unitn_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.reveal .footer {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: 20px !important;
+
+  font-size: 20px;
+  color: #444;
+}
+
+/* =========================
+   TITLE SLIDE
+   ========================= */
+
+/* titolo */
+
+.reveal .quarto-title-block .title {
+  font-size: 2.6em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* linea rossa sotto il titolo */
+
+.reveal .quarto-title-block .title::after {
+  content: "";
+  display: block;
+
+  width: 40%;
+  max-width: 700px;
+  height: 6px;
+
+  margin: 30px auto 0 auto;
+
+  background: #b00020;
+  border-radius: 4px;
+}
+
+/* sottotitolo */
+
+.reveal .quarto-title-block .subtitle {
+  font-size: 1.3em;
+  margin-top: 35px;
+  color: #444;
+}
+
+/* autore e data */
+
+.reveal .quarto-title-block .author,
+.reveal .quarto-title-block .date {
+  font-size: 0.9em;
+  color: #555;
+}

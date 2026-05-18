@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Precision Motion System"
+
+format:
+  revealjs:
+    include-in-header: 
+      - include/password.html
+
+    width: 1920
+    height: 1080
+
+    theme: simple
+    css: styles.css
+
+    slide-number: true
+    controls: false
+    progress: true
+    transition: none
+    center: false
+
+    embed-resources: true
+    self-contained: true
+
+    margin: 0.08
+
+    footer: "Group C - Dipartimento di Ingegneria Industriale"
+
+    pdf-max-pages-per-slide: 1
+    pdf-separate-fragments: false
+
+execute:
+  freeze: auto
