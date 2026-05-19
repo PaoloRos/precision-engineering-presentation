@@ -7,12 +7,6 @@ date: today
 date-format: "D MMMM YYYY"
 ---
 
-## AI and SW Usage
-
-vedere se mettere in fondo
-
-non so se tenere l'uso dei SW (non mi sembra utile)
-
 ## Project Objectives
 
 :::: {.columns}
@@ -20,13 +14,11 @@ non so se tenere l'uso dei SW (non mi sembra utile)
 ::: {.column width="50%"}
 1. **Design a precision motion de-amplifier**
 
-**<span style="color:red;">METTERE NUOVA IMMAGINE!</span>**
-
 ![](./include/images/final-model.png){fig-align="center" width="80%"}
 :::
 
 ::: {.column width="50%"}
-2. **Experimental calibration of a precision amplifier**
+2. **Static calibration of a precision motion amplifier**
 
 ![](./include/images/mech-1.png){fig-align="center" width="50%"}
 
@@ -42,7 +34,7 @@ Calibration performed on an existing setup.
 
 ## Design Workflow
 
-![](./include/images/design-process.png){fig-align="center" width="100%"}
+![](./include/images/design-workflow.png){fig-align="center" width="120%"}
 
 ## Product Definition
 
@@ -144,8 +136,8 @@ QFD won't be entirely explained, since it was already presented in class.
 ## Concepts Generation
 
 * Product decomposition used as a knowledge base for concept generation
-* Morphological map translated into multiple conceptual solutions
-* Emphasis on system architecture rather than implementation details
+* Morphological map translated into **multiple conceptual solutions**
+* Emphasis on **system architecture** rather than implementation details
 * Preliminary calculations and simulations used for concept validation
 
 ::: {.footer-note}
@@ -158,7 +150,7 @@ Each figure is labeled above with its corresponding concept number.
 
 ::: {.column width="50%"}
 * Motion amplification achieved through gear transmission
-* Gear mechanisms unsuitable for high-precision applications due to backlash and friction
+* Gear mechanisms unsuitable for high-precision applications due to **backlash and friction**
 :::
 
 ::: {.column width="50%"}
@@ -171,11 +163,11 @@ Each figure is labeled above with its corresponding concept number.
 
 :::: {.columns}
 ::: {.column width="50%"}
-* Elastic deformation enables high repeatability
 * Multi-stage motion transmission and amplification
-* Straight-line motion achieved through structural symmetry
-* Motion amplification through lever mechanisms
-* Linear input-output relationship enabled by lever kinematics
+* **Elastic deformation** enables high repeatability
+* Straight-line motion achieved through **structural symmetry**
+* Motion amplification through **lever mechanisms**
+* Linear input-output relationship enabled by **lever kinematics**
 :::
 ::: {.column width="50%"}
 ![](./include/images/double-compound-1.png){fig-align="center" width="100%" style="margin-bottom: 20px;"}
@@ -186,7 +178,7 @@ Each figure is labeled above with its corresponding concept number.
 
 ## Single-Stage Compliant Mechanism Concepts
 
-* Single-stage mechanism integrating transmission and amplification
+* Single-stage mechanism **integrating** transmission and amplification
 * Same kinematic and compliant principles as the multi-stage architectures
 
 :::: {.columns}
@@ -213,7 +205,7 @@ Each figure is labeled above with its corresponding concept number.
 
 :::: {.columns}
 :::: {.column width="50%"}
-* System requirements adopted as decision criteria
+* System requirements adopted as **decision criteria**
 * Belief maps used by each group member to evaluate the capability of each concept to satisfy the design criteria
 * Decision matrix used for concept ranking and comparison
 :::
@@ -228,7 +220,7 @@ Each figure is labeled above with its corresponding concept number.
 
 :::: {.columns}
 ::: {.column width="50%"}
-* Single-Stage Compliant Mechanism Concept 2 selected from the decision matrix evaluation
+* **Single-Stage Compliant Mechanism Concept 2** selected from the decision matrix evaluation
 * The selected concept was then further analysed and modelled
 :::
 ::: {.column width="50%"}
@@ -243,10 +235,10 @@ Each figure is labeled above with its corresponding concept number.
 ## Kinematic Design
 :::: {.columns}
 ::: {.column width="50%"}
-* Lever-based mechanism architecture:
+* **Lever-based mechanism architecture**:
   - linear displacement de-amplification
   - reversible kinematic behaviour
-* Straight-line motion ensured by structural symmetry
+* Straight-line motion ensured by **structural symmetry**
 :::
 ::: {.column width="50%"}
 ![](./include/images/final-model.png){fig-align="center" width="100%"}
@@ -257,10 +249,10 @@ Each figure is labeled above with its corresponding concept number.
 
 :::: {.columns}
 ::: {.column width="50%"}
-- Elastic deformation enables:
+- **Elastic deformation** enables:
   - high repeatability
   - system reversibility
-- Flexure hinges adopted to implement joints
+- **Flexure hinges** adopted to implement joints
 - Hinge optimization:
   - Leaf hinges: <span style="color: green;">low stiffness</span>, <span style="color: red;">limited angular excursion</span>
   - Circular hinges: <span style="color: red;">high stiffness</span>, <span style="color: green;">high angular excursion</span>
@@ -273,7 +265,7 @@ Each figure is labeled above with its corresponding concept number.
 ## Material Selection
 
 - Material selection supported by Ashby Map
-- High yield strength identified as a key requirement $\Rightarrow$ Beryllium-Copper selected to avoid plastic deformation
+- **High yield strength** identified as a key requirement $\Rightarrow$ **Beryllium-Copper** selected to avoid plastic deformation
 
 ![](./include/images/chetwynd_histograms.png){fig-align="center" width="100%"}
 
@@ -292,15 +284,116 @@ Each figure is labeled above with its corresponding concept number.
 * Reasonance at $30 \,\mathrm{rad/s} \approx 4.77 \,\mathrm{Hz}$
 
 ::: {.footer-note}
-The deviation from linearity is calculated over the full-scale (FS) output range:
+The deviation from linearity is calculated over the full-scale ($FS$) output range:
 $$
 \Delta_{\text{linearity}} = \frac{\max(|y_{\text{sim}} - y_{\text{interp}}|)}{FS} \times 100
 $$
 :::
 :::
 ::: {.column width="50%"}
-![](./include/images/in-out.png){fig-align="center" width="80%" style="margin-bottom: 20px;"}
+![](./include/images/in-out.png){fig-align="center" width="70%" style="margin-bottom: 20px;"}
 
-![](./include/images/FR.png){fig-align="center" width="80%"}
+![](./include/images/FR.png){fig-align="center" width="70%"}
 :::
 ::::
+
+# Static Calibration of a Precision Motion Amplifier
+
+## Measured System and Experimental Setup
+
+:::: {.columns}
+::: {.column width="50%"}
+* Kelvin-clamp precision mounting
+* Precision-screw manual actuation
+* LIF-based input/output displacement measurement
+:::
+::: {.column width="50%"}
+![](./include/images/mech-1.png){fig-align="center" width="80%"}
+:::
+::::
+
+## Effect of Noise
+
+:::: {.columns}
+::: {.column width="50%"}
+* **Negligible noise contribution**:
+    - Sensor drift: $\sim 10^0 \,\mathrm{nm/s}$
+    - Stochastic contribution: $\sim 10^1 \,\mathrm{nm}$ with $95\%$ confidence level
+
+* ACF and FFT analyses therefore considered unnecessary
+
+::: {.footer-note}
+Operating displacements were on the order of $\sim 10^{0}\,\mathrm{mm}$ (input) and $\sim 10^{-2}\,\mathrm{mm}$ (output); hence, noise contribution was considered negligible.
+:::
+:::
+::: {.column width="50%"}
+![](./include/images/noise-drift.png){fig-align="center" width="80%" style="margin-bottom: 20px;"}
+
+![](./include/images/noise-resid.png){fig-align="center" width="80%"}
+:::
+::::
+
+## Static Calibration Results
+
+:::: {.columns}
+::: {.column width="50%"}
+* **Linear second-order model** adopted to fit data:
+$$
+y_{i,k} = \beta_0 + \beta_{k} + \beta_1 x_{i,k} + \beta_2 x^2_{i,k} + \varepsilon_{i,k} 
+$$
+where $i$ index of measurement and $k$ index of motion direction.
+
+
+* Residuals normality: *p*-value $= 0.15$ (Shapiro-Wilk test)
+
+* Maximum deviation from linearity $\Delta_{\text{linearity}} = 0.01\%$
+
+:::
+::: {.column width="50%"}
+:::{#tbl-regression tbl-colwidths="[40,30,30]"}
+| Term                          | Estimate              | Std. Error           |
+|:-----------------------------:|:---------------------:|:--------------------:|
+| $\beta_0\ \mathrm{(mm)}$      | $-3.61 \cdot 10^{-4}$ | $6.28 \cdot 10^{-6}$ |
+| $\beta_{forward}\ \mathrm{(mm)}$ | $-4.02 \cdot 10^{-5}$ | $3.24 \cdot 10^{-6}$ |
+| $\beta_1\ \mathrm{(adim)}$    | $4.89 \cdot 10^{-2}$  | $5.16 \cdot 10^{-6}$ |
+| $\beta_2\ \mathrm{(1/mm^2)}$  | $-1.67 \cdot 10^{-4}$ | $9.51 \cdot 10^{-7}$ |
+
+Table: Regression coefficients and standard errors.
+:::
+
+::: {.footer-note}
+Similarly to the modeling section, the deviation from linearity is calculated over the full-scale (FS) output range:
+$$
+\Delta_{\text{linearity}} = \frac{|y_i - \hat{y}_i|}{FS} \times 100 .
+$$
+:::
+:::
+::::
+
+## Calibration Conclusions
+- Negligible offset and direction bias coefficients ($\beta_0$, $\beta_{\mathrm{forward}}$): **limited hysteresis effects**
+- Minimal quadratic contribution $\beta_2$
+- Dominant linear coefficient $\beta_1 = 4.89 \cdot 10^{-2} \approx \frac{1}{20}$, confirming **high linearity**
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./include/images/calibration.png){fig-align="center" width="100%"}
+:::
+::: {.column width="50%"}
+![](./include/images/residuals.png){fig-align="center" width="100%"}
+:::
+::::
+
+## AI Usage
+
+AI-based tools were employed to support layout refinement, visual content generation, and presentation optimization.
+
+In particular:
+
+- [ChatGPT by OpenAI](https://openai.com/chatgpt) was used for language refinement, layout optimization, and visual content support;
+
+- [Gemini via NotebookLM](https://notebooklm.google.com/) was used to generate the presentation video.
+
+**All generated materials were reviewed and validated by the authors**.
+
+# Thank you for your attention!
