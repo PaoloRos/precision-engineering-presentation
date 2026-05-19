@@ -7,3 +7,116 @@ date: today
 date-format: "D MMMM YYYY"
 ---
 
+## AI and SW Usage
+
+vedere se mettere in fondo
+
+non so se tenere l'uso dei SW (non mi sembra utile)
+
+## Project Objectives
+
+:::: {.columns}
+
+::: {.column width="50%"}
+1. **Design a precision motion de-amplifier**
+
+**<span style="color:red;">METTERE NUOVA IMMAGINE!</span>**
+
+![](./include/images/final-model.png){fig-align="center" width="80%"}
+:::
+
+::: {.column width="50%"}
+2. **Experimental calibration of a precision amplifier**
+
+![](./include/images/mech-1.png){fig-align="center" width="50%"}
+
+:::{.footer-note}
+Calibration performed on an existing setup.
+:::
+
+:::
+
+::::
+
+# Design a Precision Motion De-Amplifier
+
+## Design Workflow
+
+![](./include/images/design-process.png){fig-align="center" width="100%"}
+
+## Product Definition
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Customer needs**:
+
+- Straight input and output motion
+- De-amplification ratio $\text{OUT}:\text{IN} = 1:20$
+- Deviation from linear relationship $\leq 5\%$
+- Reversible motion transmission
+:::
+
+::: {.column width="50%"}
+**Application constraints**:
+
+- Input stroke $\leq 10 \,\mathrm{mm}$
+- Input force $\leq 0.1 \,\mathrm{N}$
+- Space envelope $\leq 200 \times 200 \times 20 \,\mathrm{mm}$
+- Flat sensing surface $\geq 5 \times 5 \,\mathrm{mm}$
+- Kelvin clamp support
+:::
+
+::::
+
+## Quality Function Deployment (QFD)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Translate customer needs into concrete design criteria
+- Needs $\rightarrow$ **Requirements** (comprehensible by customers)
+- Requirements $\rightarrow$ **Specifications** (engineering language)
+
+::: {.footer-note}
+QFD won't be entirely explained, since it was already presented in class.
+:::
+:::
+
+::: {.column width="50%"}
+![](./include/images/qfd.png){fig-align="center" width="100%"}
+:::
+::::
+
+## Product Decomposition
+
+:::: {.columns}
+
+::: {.column width="50%"}
+* Existing systems decomposed into **atomic functions**
+* Independent analysis performed by each team member
+* Useful to **improve the knowledge** of the topic
+* Example shown on the right
+:::
+
+::: {.column width="50%"}
+![](./include/images/ProductDecomposition1Daniele.png){fig-align="center" width="70%"}
+:::
+
+::::
+
+## Functional Decomposition
+
+* **Functional architecture** derived from system requirements
+* System decomposed into atomic functions
+* **Hierarchical organization** of functional blocks
+
+![](./include/images/functional-decomposition.png){fig-align="center" width="100%"}
+
+## Morphological Combination
+
+* Atomic functions combined into a **morphological map** of the system
+
+![](./include/images/Morphological-combination.png){fig-align="center" width="100%"}
+

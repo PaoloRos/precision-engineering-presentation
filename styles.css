@@ -114,7 +114,34 @@
 }
 
 /* =========================
-   TITLE SLIDE
+   FOOTER NOTE
+   ========================= */
+
+.footer-note {
+  margin-top: 30px;
+  padding: 18px 24px;
+
+  background: #dbeeff;
+  border-left: 8px solid #1976d2;
+  border-radius: 12px;
+
+  font-size: 0.78em;
+  line-height: 1.4;
+  color: #0d2b45;
+}
+
+.footer-note::before {
+  content: "ℹ️ Remark";
+  display: block;
+
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  color: #0b4f8a;
+}
+
+/* =========================
+   SLIDE INIZIALE
    ========================= */
 
 /* titolo */

@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html#ai-and-sw-usage",
+    "href": "index.html#ai-and-sw-usage",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "AI and SW Usage",
+    "text": "AI and SW Usage\nvedere se mettere in fondo\nnon so se tenere l’uso dei SW (non mi sembra utile)"
+  },
+  {
+    "objectID": "index.html#project-objectives",
+    "href": "index.html#project-objectives",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Project Objectives",
+    "text": "Project Objectives\n\n\n\nDesign a precision motion de-amplifier\n\nMETTERE NUOVA IMMAGINE!\n\n\n\n\n\n\n\nExperimental calibration of a precision amplifier\n\n\n\n\n\n\n\nCalibration performed on an existing setup."
+  },
+  {
+    "objectID": "index.html#design-workflow",
+    "href": "index.html#design-workflow",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Design Workflow",
+    "text": "Design Workflow"
+  },
+  {
+    "objectID": "index.html#product-definition",
+    "href": "index.html#product-definition",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Product Definition",
+    "text": "Product Definition\n\n\nCustomer needs:\n\nStraight input and output motion\nDe-amplification ratio \\(\\text{OUT}:\\text{IN} = 1:20\\)\nDeviation from linear relationship \\(\\leq 5\\%\\)\nReversible motion transmission\n\n\nApplication constraints:\n\nInput stroke \\(\\leq 10 \\,\\mathrm{mm}\\)\nInput force \\(\\leq 0.1 \\,\\mathrm{N}\\)\nSpace envelope \\(\\leq 200 \\times 200 \\times 20 \\,\\mathrm{mm}\\)\nFlat sensing surface \\(\\geq 5 \\times 5 \\,\\mathrm{mm}\\)\nKelvin clamp support"
+  },
+  {
+    "objectID": "index.html#quality-function-deployment-qfd",
+    "href": "index.html#quality-function-deployment-qfd",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Quality Function Deployment (QFD)",
+    "text": "Quality Function Deployment (QFD)\n\n\n\nTranslate customer needs into concrete design criteria\nNeeds \\(\\rightarrow\\) Requirements (comprehensible by customers)\nRequirements \\(\\rightarrow\\) Specifications (engineering language)\n\n\nQFD won’t be entirely explained, since it was already presented in class."
+  },
+  {
+    "objectID": "index.html#product-decomposition",
+    "href": "index.html#product-decomposition",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Product Decomposition",
+    "text": "Product Decomposition\n\n\n\nExisting systems decomposed into atomic functions\nIndependent analysis performed by each team member\nUseful to improve the knowledge of the topic\nExample shown on the right"
+  },
+  {
+    "objectID": "index.html#functional-decomposition",
+    "href": "index.html#functional-decomposition",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Functional Decomposition",
+    "text": "Functional Decomposition\n\nFunctional architecture derived from system requirements\nSystem decomposed into atomic functions\nHierarchical organization of functional blocks"
+  },
+  {
+    "objectID": "index.html#morphological-combination",
+    "href": "index.html#morphological-combination",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Morphological Combination",
+    "text": "Morphological Combination\n\nAtomic functions combined into a morphological map of the system"
+  }
+]
