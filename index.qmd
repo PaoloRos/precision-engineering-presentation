@@ -120,3 +120,187 @@ QFD won't be entirely explained, since it was already presented in class.
 
 ![](./include/images/Morphological-combination.png){fig-align="center" width="100%"}
 
+## Theory of The Resulution of Inventive Problems (TRIZ)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+* Identification of engineering contradictions
+* Separation between conceptual solution and implementation
+* Application of the [40 TRIZ inventive principles](https://triz40.com/TRIZ_GB.php)
+* **Contradictions derived from system requirements**
+:::
+
+::: {.column width="50%"}
+![](./include/images/TRIZ-method.png){fig-align="center" width="100%"}
+:::
+
+::::
+
+## Example of Contradiction Resolution
+
+![](./include/images/TRIZ-example.png){fig-align="center" width="100%"}
+
+## Concepts Generation
+
+* Product decomposition used as a knowledge base for concept generation
+* Morphological map translated into multiple conceptual solutions
+* Emphasis on system architecture rather than implementation details
+* Preliminary calculations and simulations used for concept validation
+
+::: {.footer-note}
+Each figure is labeled above with its corresponding concept number.
+:::
+
+## Single-Stage Mechanical Concept
+
+:::: {.columns}
+
+::: {.column width="50%"}
+* Motion amplification achieved through gear transmission
+* Gear mechanisms unsuitable for high-precision applications due to backlash and friction
+:::
+
+::: {.column width="50%"}
+![](./include/images/concept-ruote-dentate.png){fig-align="center" width="100%"}
+:::
+
+::::
+
+## Multi-Stage Compliant Mechanism Concepts
+
+:::: {.columns}
+::: {.column width="50%"}
+* Elastic deformation enables high repeatability
+* Multi-stage motion transmission and amplification
+* Straight-line motion achieved through structural symmetry
+* Motion amplification through lever mechanisms
+* Linear input-output relationship enabled by lever kinematics
+:::
+::: {.column width="50%"}
+![](./include/images/double-compound-1.png){fig-align="center" width="100%" style="margin-bottom: 20px;"}
+
+![](./include/images/double-compound-2.png){fig-align="center" width="100%"}
+:::
+::::
+
+## Single-Stage Compliant Mechanism Concepts
+
+* Single-stage mechanism integrating transmission and amplification
+* Same kinematic and compliant principles as the multi-stage architectures
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./include/images/concept-daniele.png){fig-align="center" width="90%"}
+:::
+::: {.column width="50%"}
+![](./include/images/concept-paolo.png){fig-align="center" width="60%"}
+:::
+::::
+
+## Single-Stage Compliant Mechanism Concepts
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./include/images/concept-leonardo.png){fig-align="center" width="70%"}
+:::
+::: {.column width="50%"}
+![](./include/images/concept-isacco.png){fig-align="center" width="80%"}
+:::
+::::
+
+## Robust Decision-Making
+
+:::: {.columns}
+:::: {.column width="50%"}
+* System requirements adopted as decision criteria
+* Belief maps used by each group member to evaluate the capability of each concept to satisfy the design criteria
+* Decision matrix used for concept ranking and comparison
+:::
+::: {.column width="50%"}
+![](./include/images/beliefmap.png){fig-align="center" width="60%"}
+:::
+::::
+
+![](./include/images/DecisionMatrix.png){fig-align="center" width="65%"}
+
+## Selected Concept
+
+:::: {.columns}
+::: {.column width="50%"}
+* Single-Stage Compliant Mechanism Concept 2 selected from the decision matrix evaluation
+* The selected concept was then further analysed and modelled
+:::
+::: {.column width="50%"}
+![](./include/images/concept-isacco.png){fig-align="center" width="80%"}
+:::
+::::
+
+## Modeling Workflow
+
+![](./include/images/modeling.png){fig-align="center" width="100%"}
+
+## Kinematic Design
+:::: {.columns}
+::: {.column width="50%"}
+* Lever-based mechanism architecture:
+  - linear displacement de-amplification
+  - reversible kinematic behaviour
+* Straight-line motion ensured by structural symmetry
+:::
+::: {.column width="50%"}
+![](./include/images/final-model.png){fig-align="center" width="100%"}
+:::
+::::
+
+## Dynamic Design
+
+:::: {.columns}
+::: {.column width="50%"}
+- Elastic deformation enables:
+  - high repeatability
+  - system reversibility
+- Flexure hinges adopted to implement joints
+- Hinge optimization:
+  - Leaf hinges: <span style="color: green;">low stiffness</span>, <span style="color: red;">limited angular excursion</span>
+  - Circular hinges: <span style="color: red;">high stiffness</span>, <span style="color: green;">high angular excursion</span>
+:::
+::: {.column width="50%"}
+![](./include/images/final-model.png){fig-align="center" width="100%"}
+:::
+::::
+
+## Material Selection
+
+- Material selection supported by Ashby Map
+- High yield strength identified as a key requirement $\Rightarrow$ Beryllium-Copper selected to avoid plastic deformation
+
+![](./include/images/chetwynd_histograms.png){fig-align="center" width="100%"}
+
+## Simulation Results
+
+:::: {.columns}
+::: {.column width="50%"}
+|  |  |
+|---|---|
+| **Gain OUT : IN** | $1:20$ at $y_{in}=10\,\mathrm{mm}$ |
+| **Maximum space envelope** | $199.5 \times 174.87 \times 8\ \mathrm{mm}$ |
+| **Maximum linearity deviation** | $0.7\%\ (0.0035\ \mathrm{mm})$ |
+| **Maximum input force** | $1.07\ \mathrm{N}$ |
+
+* High vibration attenuation behaviour
+* Reasonance at $30 \,\mathrm{rad/s} \approx 4.77 \,\mathrm{Hz}$
+
+::: {.footer-note}
+The deviation from linearity is calculated over the full-scale (FS) output range:
+$$
+\Delta_{\text{linearity}} = \frac{\max(|y_{\text{sim}} - y_{\text{interp}}|)}{FS} \times 100
+$$
+:::
+:::
+::: {.column width="50%"}
+![](./include/images/in-out.png){fig-align="center" width="80%" style="margin-bottom: 20px;"}
+
+![](./include/images/FR.png){fig-align="center" width="80%"}
+:::
+::::
