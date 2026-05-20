@@ -144,7 +144,7 @@
     "href": "index.html#simulation-results",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Simulation Results",
-    "text": "Simulation Results\n\n\n\n\n\n\n\n\n\nGain OUT : IN\n\\(1:20\\) at \\(y_{in}=10\\,\\mathrm{mm}\\)\n\n\nMaximum space envelope\n\\(199.5 \\times 174.87 \\times 8\\ \\mathrm{mm}\\)\n\n\nMaximum linearity deviation\n\\(0.7\\%\\ (0.0035\\ \\mathrm{mm})\\)\n\n\nMaximum input force\n\\(1.07\\ \\mathrm{N}\\)\n\n\n\n\nAttenuation behaviour with resonance at \\(30 \\,\\mathrm{rad/s} = 4.77 \\,\\mathrm{Hz}\\)\nStrong post-resonance attenuation and phase delay\n\n\nThe deviation from linearity is calculated over the full-scale (\\(FS\\)) output range: \\[\n\\Delta_{\\text{linearity}} = \\frac{\\max(|y_{\\text{sim}} - y_{\\text{interp}}|)}{FS} \\times 100\n\\]"
+    "text": "Simulation Results\n\n\n\n\n\n\n\n\n\nGain OUT : IN\n\\(1:20\\) at \\(y_{in}=10\\,\\mathrm{mm}\\)\n\n\nMaximum linearity deviation\n\\(0.7\\%\\ (0.0035\\ \\mathrm{mm})\\)\n\n\nMaximum space envelope\n\\(199.5 \\times 174.87 \\times 8\\ \\mathrm{mm}\\)\n\n\nMaximum input force\n\\(1.07\\ \\mathrm{N}\\)\n\n\n\n\nAttenuation behaviour with resonance at \\(30 \\,\\mathrm{rad/s} = 4.77 \\,\\mathrm{Hz}\\)\nStrong post-resonance attenuation and phase delay\n\n\nThe deviation from linearity is calculated over the full-scale (\\(FS\\)) output range: \\[\n\\Delta_{\\text{linearity}} = \\frac{\\max(|y_{\\text{sim}} - y_{\\text{interp}}|)}{FS} \\times 100\n\\]"
   },
   {
     "objectID": "index.html#measured-system-and-experimental-setup",

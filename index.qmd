@@ -276,8 +276,8 @@ Each figure is labeled above with its corresponding concept number.
 |  |  |
 |---|---|
 | **Gain OUT : IN** | $1:20$ at $y_{in}=10\,\mathrm{mm}$ |
-| **Maximum space envelope** | $199.5 \times 174.87 \times 8\ \mathrm{mm}$ |
 | **Maximum linearity deviation** | $0.7\%\ (0.0035\ \mathrm{mm})$ |
+| **Maximum space envelope** | $199.5 \times 174.87 \times 8\ \mathrm{mm}$ |
 | **Maximum input force** | $1.07\ \mathrm{N}$ |
 
 * **Attenuation behaviour** with resonance at $30 \,\mathrm{rad/s} = 4.77 \,\mathrm{Hz}$

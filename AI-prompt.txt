@@ -1,0 +1,94 @@
+[General Instructions]
+
+Generate an explanatory video about this presentation regarding a Precision Engineering project. The video MUST be in English and should have a duration of approximately 15 minutes (maximum 16 minutes as tolerance).
+
+Use a formal and technical tone throughout the presentation, always in third-person singular form.
+The presentation is intended for an expert audience, therefore explanations should remain technically rigorous and engineering-oriented.
+
+Display the presentation slides whenever possible, and use standalone images only when appropriate. Slides and images must maintain HIGH visual quality: all visual elements should be sufficiently large, clear, and easily readable.
+
+Follow the presentation slides closely. Limited freedom may be taken to generate supporting visual content such as diagrams, arrows, highlights, zoom-ins, or simplified explanatory schemes whenever useful for clarity.
+
+Text written in BOLD represents key concepts and important technical points, therefore it should receive particular emphasis during the explanation.
+
+The “Note” boxes are less important than the main slide content; therefore, only a limited amount of time should be dedicated to them.
+
+Do NOT skip any slide. Additional comments for specific slides are provided below.
+
+[Design Workflow]
+
+Mention all the steps followed during the design phase.
+
+[Product Decomposition]
+
+Emphasize that Product Decomposition was also used as a method to improve personal understanding and knowledge of the topic.
+
+[Functional Decomposition]
+
+Describe the hierarchical map clearly:
+
+* Blue blocks represent atomic functions at a higher and more abstract level.
+* White blocks represent more elementary atomic functions.
+
+[Morphological Combination]
+
+While describing the figure, refer to the previous hierarchical diagram from the Functional Decomposition slide:
+
+* Blue blocks correspond to higher-level abstract functions.
+* Yellow blocks correspond to the most elementary atomic functions.
+
+[Concepts Generation / Single-Stage Mechanical Concept / Multi-Stage Compliant Mechanism Concepts / Single-Stage Compliant Mechanism Concepts]
+
+These slides are relatively important (although not among the most critical ones), therefore spend slightly more time presenting the different concepts.
+
+Emphasize that the number of generated concepts was intentionally kept balanced:
+
+* not excessively large, in order to maintain a clear global overview of all proposals,
+* but not too limited, in order to avoid a lack of design alternatives and ideas.
+
+Highlight that the compliant-mechanism concepts exhibit a certain structural symmetry between input and output, specifically to enable reversible operation, as discussed previously in the TRIZ example.
+
+[Dynamic Selection]
+
+Regarding the Hinge Optimization:
+
+The mechanism design focused not only on implementing different concepts, but also on optimizing the flexure hinges to reduce the overall stiffness while remaining within the valid operating range. Parametric studies and optimization procedures were developed to identify the most suitable hinge geometries for the application.
+
+Several hinge types were initially analysed, including circular, leaf-spring, cartwheel, and elliptical hinges, using analytical models from the literature.
+
+The optimization process was guided by the following criteria:
+
+* Maximize allowable flexure angle
+* Minimize hinge stiffness
+* Respect analytical-model validity and small-deformation assumptions
+* Avoid material yielding due to stress concentrations
+* Maintain manufacturability
+
+The final design employed only leaf-spring and circular hinges. Leaf-spring hinges were used in regions with small angular deflections because of their low stiffness, while circular hinges were adopted where higher motion accuracy and larger rotations were required due to their approximately fixed pivot point. This compromise enabled a balance between structural compliance and precise motion guidance.
+
+Overall, the optimization procedure improved the final design and provided insight into practical engineering trade-offs and iterative design processes.
+
+[Simulation Results]
+
+Present the results with reference to the original design constraints.
+
+Comment on the results table:
+the input force exceeds the maximum target limit (0.1 N), however it still remains relatively small in absolute terms. Moreover, the overall system performance remains highly positive:
+
+* the OUT/IN ratio fully satisfies the specifications,
+* the behaviour is highly linear (deviation below 1%),
+* the overall spatial dimensions remain within the required limits.
+
+Briefly discuss the frequency-response behaviour.
+
+Briefly mention the standalone images.
+
+Briefly mention the note.
+
+[AI Usage]
+
+Briefly mention this slide without spending excessive time on it (only a few tens of seconds).
+
+[Thank You for Your Attention]
+
+Conclude the presentation by thanking the audience.
