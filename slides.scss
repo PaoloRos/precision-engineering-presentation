@@ -1,0 +1,204 @@
+/*-- Load variables --*/
+@import "_vars.scss";
+
+/*-- scss:defaults --*/
+
+$presentation-font-size-root: 30px;
+$presentation-heading-color: $main-color;
+$body-bg: white;
+$body-color: #111;
+
+/*-- scss:rules --*/
+
+.reveal {
+  line-height: 1.22;
+}
+
+/* =========================
+   TITOLI
+   ========================= */
+
+.reveal h2 {
+  font-size: 1.55em;
+  font-weight: 600;
+  border-bottom: 5px solid $main-color;
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+}
+
+.reveal h1:not(.title) {
+  font-size: 1.85em;
+  font-weight: 600;
+  border-bottom: 5px solid $main-color;
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+}
+
+/* =========================
+   LISTE
+   ========================= */
+
+.reveal ul {
+  margin-top: 24px;
+}
+
+.reveal li {
+  margin-bottom: 12px;
+}
+
+/* =========================
+   IMMAGINI
+   ========================= */
+
+.reveal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+
+.reveal .slide-logo {
+  max-height: 58px !important;
+  top: 24px !important;
+  right: 32px !important;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.reveal .footer {
+  font-size: 15px;
+  color: #444;
+  bottom: 14px !important;
+}
+
+/* =========================
+   FOOTER NOTE
+   ========================= */
+
+.footer-note {
+  position: relative;
+
+  margin-top: 24px;
+
+  border-left: 7px solid $my-blue;
+  border-radius: 16px;
+
+  background: white;
+  overflow: hidden;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.footer-note::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 50px;
+
+  background: #e8edf7;
+  z-index: 0;
+}
+
+.footer-note::after {
+  content: "ℹ️ Note";
+
+  position: absolute;
+  top: 12px;
+  left: 24px;
+
+  font-size: 0.78em;
+  font-weight: 700;
+
+  color: $my-orange;
+  z-index: 2;
+}
+
+.footer-note > * {
+  position: relative;
+  z-index: 1;
+
+  padding-left: 26px;
+  padding-right: 26px;
+
+  font-size: 0.68em;
+  line-height: 1.45;
+  color: #555;
+}
+
+.footer-note > *:first-child {
+  padding-top: 66px;
+}
+
+.footer-note > *:last-child {
+  padding-bottom: 22px;
+}
+
+/* =========================
+   TITLE SLIDE
+   ========================= */
+
+.reveal .quarto-title-block .title {
+  font-size: 2.4em;
+  font-weight: 600;
+  border-bottom: 6px solid $main-color;
+  padding-bottom: 24px;
+}
+
+.reveal .quarto-title-block .subtitle {
+  font-size: 1.25em;
+  margin-top: 30px;
+  color: #444;
+}
+
+.reveal .quarto-title-block .author,
+.reveal .quarto-title-block .date {
+  font-size: 0.85em;
+  color: #555;
+}
+
+/* =========================
+   PDF EXPORT
+   ========================= */
+
+html.print-pdf .reveal img {
+  max-width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+}
+
+html.print-pdf .reveal .footer {
+  bottom: 14px !important;
+}
+
+.reveal .slide-logo {
+  height: 65px !important;
+  width: auto !important;
+}
+
+@media print {
+
+  .slide-logo {
+    position: absolute !important;
+  }
+
+  .reveal img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    break-inside: avoid;
+  }
+
+}

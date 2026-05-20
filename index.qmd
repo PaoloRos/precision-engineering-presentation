@@ -214,7 +214,7 @@ Each figure is labeled above with its corresponding concept number.
 :::
 ::::
 
-![](./include/images/DecisionMatrix.png){fig-align="center" width="65%"}
+![](./include/images/DecisionMatrix.png){fig-align="center" width="60%"}
 
 ## Selected Concept
 
@@ -280,20 +280,28 @@ Each figure is labeled above with its corresponding concept number.
 | **Maximum space envelope** | $199.5 \times 174.87 \times 8\ \mathrm{mm}$ |
 | **Maximum input force** | $1.07\ \mathrm{N}$ |
 
-* **Attenuation behaviour** with resonance at $30 \,\mathrm{rad/s} = 4.77 \,\mathrm{Hz}$
-* Strong post-resonance attenuation and phase delay
-
 ::: {.footer-note}
 The deviation from linearity is calculated over the full-scale ($FS$) output range:
 $$
 \Delta_{\text{linearity}} = \frac{\max(|y_{\text{sim}} - y_{\text{interp}}|)}{FS} \times 100
 $$
 :::
+
 :::
 ::: {.column width="50%"}
-![](./include/images/in-out.png){fig-align="center" width="70%" style="margin-bottom: 20px;"}
+![](./include/images/in-out.png){fig-align="center" width="100%"}
+:::
+::::
 
-![](./include/images/FR.png){fig-align="center" width="70%"}
+## Simulation Results
+
+:::: {.columns}
+::: {.column width="50%"}
+* **Attenuation behaviour** with resonance at $30 \,\mathrm{rad/s} = 4.77 \,\mathrm{Hz}$
+* Strong post-resonance attenuation and phase delay
+:::
+::: {.column width="50%"}
+![](./include/images/FR.png){fig-align="center" width="100%"}
 :::
 ::::
 

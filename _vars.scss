@@ -1,0 +1,24 @@
+$main-color: #b00020;
+$main-color-light: scale-color($main-color, $lightness: +20%);
+$main-color-dark: scale-color($main-color, $lightness: -20%);
+
+$my-blue: #1f6fff;
+$my-orange: #df6b1f;
+
+$body-bg: white;
+$body-color: #111;
+
+$headings-color: $main-color;
+$link-color: $main-color;
+$link-hover-color: $main-color-light;
+
+.reveal .slide-logo {
+  height: 70px !important;
+  width: auto !important;
+
+  max-width: unset !important;
+  max-height: unset !important;
+
+  top: 20px;
+  right: 20px;
+}

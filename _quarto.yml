@@ -7,14 +7,14 @@ website:
 
 format:
   revealjs:
-    include-in-header: 
+    include-in-header:
       - include/password.html
 
-    width: 1920
-    height: 1080
+    theme: [default, slides.scss]
 
-    theme: simple
-    css: styles.css
+    width: 1280
+    height: 720
+    margin: 0.1
 
     slide-number: true
     controls: false
@@ -22,15 +22,19 @@ format:
     transition: none
     center: false
 
-    embed-resources: true
-    self-contained: true
-
-    margin: 0.08
-
     footer: "Group C - Dipartimento di Ingegneria Industriale"
 
     pdf-max-pages-per-slide: 1
     pdf-separate-fragments: false
+
+    embed-resources: true
+    self-contained: true
+
+    fig-width: 8
+    fig-height: 4.5
+    fig-dpi: 300
+    
+    logo: include/images/unitn_logo.png
 
 execute:
   freeze: auto
