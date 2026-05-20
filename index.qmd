@@ -112,7 +112,7 @@ QFD won't be entirely explained, since it was already presented in class.
 
 ![](./include/images/Morphological-combination.png){fig-align="center" width="100%"}
 
-## Theory of The Resulution of Inventive Problems (TRIZ)
+## Theory of The Resolution of Inventive Problems (TRIZ)
 
 :::: {.columns}
 
@@ -254,8 +254,8 @@ Each figure is labeled above with its corresponding concept number.
   - system reversibility
 - **Flexure hinges** adopted to implement joints
 - Hinge optimization:
-  - Leaf hinges: <span style="color: green;">low stiffness</span>, <span style="color: red;">limited angular excursion</span>
-  - Circular hinges: <span style="color: red;">high stiffness</span>, <span style="color: green;">high angular excursion</span>
+  - Leaf hinges: <span style="color: green;">low stiffness, high angular excursion</span>, <span style="color: red;">less precise motion</span>
+  - Circular hinges: <span style="color: red;">high stiffness, limited angular excursion</span>, <span style="color: green;">more precise motion</span>
 :::
 ::: {.column width="50%"}
 ![](./include/images/final-model.png){fig-align="center" width="100%"}
@@ -280,8 +280,8 @@ Each figure is labeled above with its corresponding concept number.
 | **Maximum linearity deviation** | $0.7\%\ (0.0035\ \mathrm{mm})$ |
 | **Maximum input force** | $1.07\ \mathrm{N}$ |
 
-* High vibration attenuation behaviour
-* Reasonance at $30 \,\mathrm{rad/s} \approx 4.77 \,\mathrm{Hz}$
+* **Attenuation behaviour** with resonance at $30 \,\mathrm{rad/s} = 4.77 \,\mathrm{Hz}$
+* Strong post-resonance attenuation and phase delay
 
 ::: {.footer-note}
 The deviation from linearity is calculated over the full-scale ($FS$) output range:
@@ -303,7 +303,7 @@ $$
 
 :::: {.columns}
 ::: {.column width="50%"}
-* Kelvin-clamp precision mounting
+* Kelvin-clamp precision mounting with a tension spring for attchment
 * Precision-screw manual actuation
 * LIF-based input/output displacement measurement
 :::
@@ -337,7 +337,7 @@ Operating displacements were on the order of $\sim 10^{0}\,\mathrm{mm}$ (input) 
 
 :::: {.columns}
 ::: {.column width="50%"}
-* **Linear second-order model** adopted to fit data:
+* **Second-order model** adopted to fit data:
 $$
 y_{i,k} = \beta_0 + \beta_{k} + \beta_1 x_{i,k} + \beta_2 x^2_{i,k} + \varepsilon_{i,k} 
 $$
@@ -362,7 +362,7 @@ Table: Regression coefficients and standard errors.
 :::
 
 ::: {.footer-note}
-Similarly to the modeling section, the deviation from linearity is calculated over the full-scale (FS) output range:
+Similarly to the modeling section, the deviation from linearity is calculated over the full-scale ($FS$) output range:
 $$
 \Delta_{\text{linearity}} = \frac{|y_i - \hat{y}_i|}{FS} \times 100 .
 $$

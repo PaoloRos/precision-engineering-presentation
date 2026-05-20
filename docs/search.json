@@ -49,11 +49,11 @@
     "text": "Morphological Combination\n\nAtomic functions combined into a morphological map of the system"
   },
   {
-    "objectID": "index.html#theory-of-the-resulution-of-inventive-problems-triz",
-    "href": "index.html#theory-of-the-resulution-of-inventive-problems-triz",
+    "objectID": "index.html#theory-of-the-resolution-of-inventive-problems-triz",
+    "href": "index.html#theory-of-the-resolution-of-inventive-problems-triz",
     "title": "Design and Characterization of a Precision Motion System",
-    "section": "Theory of The Resulution of Inventive Problems (TRIZ)",
-    "text": "Theory of The Resulution of Inventive Problems (TRIZ)\n\n\n\nIdentification of engineering contradictions\nSeparation between conceptual solution and implementation\nApplication of the 40 TRIZ inventive principles\nContradictions derived from system requirements"
+    "section": "Theory of The Resolution of Inventive Problems (TRIZ)",
+    "text": "Theory of The Resolution of Inventive Problems (TRIZ)\n\n\n\nIdentification of engineering contradictions\nSeparation between conceptual solution and implementation\nApplication of the 40 TRIZ inventive principles\nContradictions derived from system requirements"
   },
   {
     "objectID": "index.html#example-of-contradiction-resolution",
@@ -130,7 +130,7 @@
     "href": "index.html#dynamic-design",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Dynamic Design",
-    "text": "Dynamic Design\n\n\n\nElastic deformation enables:\n\nhigh repeatability\nsystem reversibility\n\nFlexure hinges adopted to implement joints\nHinge optimization:\n\nLeaf hinges: low stiffness, limited angular excursion\nCircular hinges: high stiffness, high angular excursion"
+    "text": "Dynamic Design\n\n\n\nElastic deformation enables:\n\nhigh repeatability\nsystem reversibility\n\nFlexure hinges adopted to implement joints\nHinge optimization:\n\nLeaf hinges: low stiffness, high angular excursion, less precise motion\nCircular hinges: high stiffness, limited angular excursion, more precise motion"
   },
   {
     "objectID": "index.html#material-selection",
@@ -144,14 +144,14 @@
     "href": "index.html#simulation-results",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Simulation Results",
-    "text": "Simulation Results\n\n\n\n\n\n\n\n\n\nGain OUT : IN\n\\(1:20\\) at \\(y_{in}=10\\,\\mathrm{mm}\\)\n\n\nMaximum space envelope\n\\(199.5 \\times 174.87 \\times 8\\ \\mathrm{mm}\\)\n\n\nMaximum linearity deviation\n\\(0.7\\%\\ (0.0035\\ \\mathrm{mm})\\)\n\n\nMaximum input force\n\\(1.07\\ \\mathrm{N}\\)\n\n\n\n\nHigh vibration attenuation behaviour\nReasonance at \\(30 \\,\\mathrm{rad/s} \\approx 4.77 \\,\\mathrm{Hz}\\)\n\n\nThe deviation from linearity is calculated over the full-scale (\\(FS\\)) output range: \\[\n\\Delta_{\\text{linearity}} = \\frac{\\max(|y_{\\text{sim}} - y_{\\text{interp}}|)}{FS} \\times 100\n\\]"
+    "text": "Simulation Results\n\n\n\n\n\n\n\n\n\nGain OUT : IN\n\\(1:20\\) at \\(y_{in}=10\\,\\mathrm{mm}\\)\n\n\nMaximum space envelope\n\\(199.5 \\times 174.87 \\times 8\\ \\mathrm{mm}\\)\n\n\nMaximum linearity deviation\n\\(0.7\\%\\ (0.0035\\ \\mathrm{mm})\\)\n\n\nMaximum input force\n\\(1.07\\ \\mathrm{N}\\)\n\n\n\n\nAttenuation behaviour with resonance at \\(30 \\,\\mathrm{rad/s} = 4.77 \\,\\mathrm{Hz}\\)\nStrong post-resonance attenuation and phase delay\n\n\nThe deviation from linearity is calculated over the full-scale (\\(FS\\)) output range: \\[\n\\Delta_{\\text{linearity}} = \\frac{\\max(|y_{\\text{sim}} - y_{\\text{interp}}|)}{FS} \\times 100\n\\]"
   },
   {
     "objectID": "index.html#measured-system-and-experimental-setup",
     "href": "index.html#measured-system-and-experimental-setup",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Measured System and Experimental Setup",
-    "text": "Measured System and Experimental Setup\n\n\n\nKelvin-clamp precision mounting\nPrecision-screw manual actuation\nLIF-based input/output displacement measurement"
+    "text": "Measured System and Experimental Setup\n\n\n\nKelvin-clamp precision mounting with a tension spring for attchment\nPrecision-screw manual actuation\nLIF-based input/output displacement measurement"
   },
   {
     "objectID": "index.html#effect-of-noise",
@@ -165,7 +165,7 @@
     "href": "index.html#static-calibration-results",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Static Calibration Results",
-    "text": "Static Calibration Results\n\n\n\nLinear second-order model adopted to fit data: \\[\ny_{i,k} = \\beta_0 + \\beta_{k} + \\beta_1 x_{i,k} + \\beta_2 x^2_{i,k} + \\varepsilon_{i,k}\n\\] where \\(i\\) index of measurement and \\(k\\) index of motion direction.\nResiduals normality: p-value \\(= 0.15\\) (Shapiro-Wilk test)\nMaximum deviation from linearity \\(\\Delta_{\\text{linearity}} = 0.01\\%\\)\n\n\n\n\n\nTable 1: Regression coefficients and standard errors.\n\n\n\n\n\n\n\n\n\n\nTerm\nEstimate\nStd. Error\n\n\n\n\n\\(\\beta_0\\ \\mathrm{(mm)}\\)\n\\(-3.61 \\cdot 10^{-4}\\)\n\\(6.28 \\cdot 10^{-6}\\)\n\n\n\\(\\beta_{forward}\\ \\mathrm{(mm)}\\)\n\\(-4.02 \\cdot 10^{-5}\\)\n\\(3.24 \\cdot 10^{-6}\\)\n\n\n\\(\\beta_1\\ \\mathrm{(adim)}\\)\n\\(4.89 \\cdot 10^{-2}\\)\n\\(5.16 \\cdot 10^{-6}\\)\n\n\n\\(\\beta_2\\ \\mathrm{(1/mm^2)}\\)\n\\(-1.67 \\cdot 10^{-4}\\)\n\\(9.51 \\cdot 10^{-7}\\)\n\n\n\n\n\n\n\nSimilarly to the modeling section, the deviation from linearity is calculated over the full-scale (FS) output range: \\[\n\\Delta_{\\text{linearity}} = \\frac{|y_i - \\hat{y}_i|}{FS} \\times 100 .\n\\]"
+    "text": "Static Calibration Results\n\n\n\nSecond-order model adopted to fit data: \\[\ny_{i,k} = \\beta_0 + \\beta_{k} + \\beta_1 x_{i,k} + \\beta_2 x^2_{i,k} + \\varepsilon_{i,k}\n\\] where \\(i\\) index of measurement and \\(k\\) index of motion direction.\nResiduals normality: p-value \\(= 0.15\\) (Shapiro-Wilk test)\nMaximum deviation from linearity \\(\\Delta_{\\text{linearity}} = 0.01\\%\\)\n\n\n\n\n\nTable 1: Regression coefficients and standard errors.\n\n\n\n\n\n\n\n\n\n\nTerm\nEstimate\nStd. Error\n\n\n\n\n\\(\\beta_0\\ \\mathrm{(mm)}\\)\n\\(-3.61 \\cdot 10^{-4}\\)\n\\(6.28 \\cdot 10^{-6}\\)\n\n\n\\(\\beta_{forward}\\ \\mathrm{(mm)}\\)\n\\(-4.02 \\cdot 10^{-5}\\)\n\\(3.24 \\cdot 10^{-6}\\)\n\n\n\\(\\beta_1\\ \\mathrm{(adim)}\\)\n\\(4.89 \\cdot 10^{-2}\\)\n\\(5.16 \\cdot 10^{-6}\\)\n\n\n\\(\\beta_2\\ \\mathrm{(1/mm^2)}\\)\n\\(-1.67 \\cdot 10^{-4}\\)\n\\(9.51 \\cdot 10^{-7}\\)\n\n\n\n\n\n\n\nSimilarly to the modeling section, the deviation from linearity is calculated over the full-scale (\\(FS\\)) output range: \\[\n\\Delta_{\\text{linearity}} = \\frac{|y_i - \\hat{y}_i|}{FS} \\times 100 .\n\\]"
   },
   {
     "objectID": "index.html#calibration-conclusions",
