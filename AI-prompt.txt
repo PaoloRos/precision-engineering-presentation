@@ -1,15 +1,17 @@
 [General Instructions]
 
-Generate an explanatory video about this presentation regarding a Precision Engineering project. The video MUST be in English and should have a duration of approximately 15 minutes (maximum 16 minutes as tolerance).
+Generate an explanatory video based on this presentation about a Precision Engineering project. The video MUST be entirely in English and should have a duration of approximately 15 minutes (minimum 14 minutes, maximum 16 minutes as tolerance). Use a professional female voice.
 
-Use a formal and technical tone throughout the presentation, always in third-person singular form.
-The presentation is intended for an expert audience, therefore explanations should remain technically rigorous and engineering-oriented.
+Explicitly mention that the project was developed by “Group C” for the Precision Engineering course.
 
-Display the presentation slides whenever possible, and use standalone images only when appropriate. Slides and images must maintain HIGH visual quality: all visual elements should be sufficiently large, clear, and easily readable.
+Maintain a formal, technical, and engineering-oriented tone throughout the presentation. Be concise, clear, and descriptive.
+The presentation is intended for an expert audience; therefore, explanations should remain technically rigorous and focused on engineering aspects.
+
+The presentation slides MUST always remain visible on screen until the end of the video. REPORT ALL THE SLIDE IN THE PRESENTATION. DON'T CUT THEM OR MODIFY THEM.
 
 Follow the presentation slides closely. Limited freedom may be taken to generate supporting visual content such as diagrams, arrows, highlights, zoom-ins, or simplified explanatory schemes whenever useful for clarity.
 
-Text written in BOLD represents key concepts and important technical points, therefore it should receive particular emphasis during the explanation.
+Text written in BOLD represents key concepts and important technical points; therefore, it should receive particular emphasis during the narration.
 
 The “Note” boxes are less important than the main slide content; therefore, only a limited amount of time should be dedicated to them.
 
