@@ -214,7 +214,7 @@ Each figure is labeled above with its corresponding concept number.
 :::
 ::::
 
-![](./include/images/DecisionMatrix.png){fig-align="center" width="60%"}
+![](./include/images/DecisionMatrix.png){fig-align="center" width="50%"}
 
 ## Selected Concept
 
