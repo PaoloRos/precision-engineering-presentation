@@ -20,7 +20,7 @@ date-format: "D MMMM YYYY"
 ::: {.column width="50%"}
 2. **Static calibration of a precision motion amplifier**
 
-![](./include/images/mech-1.png){fig-align="center" width="50%"}
+![](./include/images/mech-1.png){fig-align="center" width="40%"}
 
 :::{.footer-note}
 Calibration performed on an existing setup.
@@ -45,7 +45,7 @@ Calibration performed on an existing setup.
 
 - Straight input and output motion
 - De-amplification ratio $\text{OUT}:\text{IN} = 1:20$
-- Deviation from linear relationship $\leq 5\%$
+- Linear relationship with maximum deviation $\leq 5\%$
 - Reversible motion transmission
 :::
 
@@ -183,10 +183,10 @@ Each figure is labeled above with its corresponding concept number.
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](./include/images/concept-daniele.png){fig-align="center" width="90%"}
+![](./include/images/concept-daniele.png){fig-align="center" width="70%"}
 :::
 ::: {.column width="50%"}
-![](./include/images/concept-paolo.png){fig-align="center" width="60%"}
+![](./include/images/concept-paolo.png){fig-align="center" width="50%"}
 :::
 ::::
 
@@ -197,7 +197,7 @@ Each figure is labeled above with its corresponding concept number.
 ![](./include/images/concept-leonardo.png){fig-align="center" width="70%"}
 :::
 ::: {.column width="50%"}
-![](./include/images/concept-isacco.png){fig-align="center" width="80%"}
+![](./include/images/concept-isacco.png){fig-align="center" width="70%"}
 :::
 ::::
 
@@ -311,7 +311,8 @@ $$
 
 :::: {.columns}
 ::: {.column width="50%"}
-* Kelvin-clamp precision mounting with a tension spring for attchment
+* Passive vibration-isolation bench
+* Kelvin-clamp precision mounting with a tension spring for attachment
 * Precision-screw manual actuation
 * LIF-based input/output displacement measurement
 :::
@@ -399,8 +400,6 @@ AI-based tools were employed to support layout refinement, visual content genera
 In particular:
 
 - [ChatGPT by OpenAI](https://openai.com/chatgpt) was used for language refinement, layout optimization, and visual content support;
-
-- [Gemini via NotebookLM](https://notebooklm.google.com/) was used to generate the presentation video.
 
 **All generated materials were reviewed and validated by the authors**.
 

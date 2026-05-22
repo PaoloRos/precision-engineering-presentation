@@ -1,96 +1,303 @@
 [General Instructions]
 
-Generate an explanatory video based on this presentation about a Precision Engineering project. The video MUST be entirely in English and should have a duration of approximately 15 minutes (minimum 14 minutes, maximum 16 minutes as tolerance). Use a professional female voice.
+Generate an explanatory video based on this presentation regarding a Precision Engineering project.
 
-Explicitly mention that the project was developed by “Group C” for the Precision Engineering course.
+The video MUST be entirely in English and should have a duration between 10 and 15 minutes, with an ideal target duration of approximately 14 minutes.
 
-Maintain a formal, technical, and engineering-oriented tone throughout the presentation. Be concise, clear, and descriptive.
-The presentation is intended for an expert audience; therefore, explanations should remain technically rigorous and focused on engineering aspects.
+Use a female voice.
 
-The presentation slides MUST always remain visible on screen until the end of the video. REPORT ALL THE SLIDE IN THE PRESENTATION. DON'T CUT THEM OR MODIFY THEM.
+Maintain a formal, technical, and engineering-oriented tone throughout the presentation.
 
-Follow the presentation slides closely. Limited freedom may be taken to generate supporting visual content such as diagrams, arrows, highlights, zoom-ins, or simplified explanatory schemes whenever useful for clarity.
+Be concise, clear, and descriptive.
+
+The presentation is intended for an EXPERT AUDIENCE; therefore, explanations must remain technically rigorous and focused on engineering aspects.
+
+The presentation slides MUST remain completely visible on screen at all times until the end of the video.
+
+IMPORTANT:
+The slides must be shown exactly as they are, as if they were static full-slide images.
+
+Do NOT:
+* crop the slides,
+* zoom excessively,
+* cut portions of the slides,
+* replace the slides,
+* visually redesign the slides,
+* partially hide slide elements.
+
+The entire slide must always remain visible and readable.
+
+Additional visual elements such as arrows, highlights, outlines, or small explanatory overlays may be added ONLY if they do not obstruct the original slide content.
+
+Follow the presentation slides closely.
 
 Text written in BOLD represents key concepts and important technical points; therefore, it should receive particular emphasis during the narration.
 
-The “Note” boxes are less important than the main slide content; therefore, only a limited amount of time should be dedicated to them.
+The “Note” boxes are less important than the main slide content; therefore, dedicate only limited time to them.
 
-Do NOT skip any slide. Additional comments for specific slides are provided below.
+Do NOT skip any slide.
 
-[Design Workflow]
+The narration pacing must be carefully balanced across the entire presentation.
 
-Mention all the steps followed during the design phase.
+Do NOT spend excessive time on introductory slides.
 
-[Product Decomposition]
+Reserve sufficient time for the final calibration and conclusion sections.
 
-Emphasize that Product Decomposition was also used as a method to improve personal understanding and knowledge of the topic.
+The final slides MUST NOT be rushed or skipped.
 
-[Functional Decomposition]
+Use approximately the following pacing:
 
-Describe the hierarchical map clearly:
+* Introductory slides: 15–25 seconds each
+* Intermediate technical slides: 25–45 seconds each
+* Main technical slides: 45–70 seconds each
+* Final calibration and conclusion section: at least 2 minutes total
 
-* Blue blocks represent atomic functions at a higher and more abstract level.
-* White blocks represent more elementary atomic functions.
+Prioritize the following slides and technical contents:
 
-[Morphological Combination]
+1. Selected Concept
+2. Dynamic Design
+3. Simulation Results
+4. Static Calibration Results
+5. Calibration Conclusion
 
-While describing the figure, refer to the previous hierarchical diagram from the Functional Decomposition slide:
+For all remaining slides, summarize the content while preserving the key engineering concepts.
 
-* Blue blocks correspond to higher-level abstract functions.
-* Yellow blocks correspond to the most elementary atomic functions.
+Focus on the most relevant engineering aspects of each slide rather than describing every small detail.
 
-[Concepts Generation / Single-Stage Mechanical Concept / Multi-Stage Compliant Mechanism Concepts / Single-Stage Compliant Mechanism Concepts]
+Additional comments for specific slides are provided below.
 
-These slides are relatively important (although not among the most critical ones), therefore spend slightly more time presenting the different concepts.
+------------------------------------------------------------
 
-Emphasize that the number of generated concepts was intentionally kept balanced:
+[Slide: Project Objectives]
 
-* not excessively large, in order to maintain a clear global overview of all proposals,
-* but not too limited, in order to avoid a lack of design alternatives and ideas.
+Describe the two independent parts of the presentation:
 
-Highlight that the compliant-mechanism concepts exhibit a certain structural symmetry between input and output, specifically to enable reversible operation, as discussed previously in the TRIZ example.
+* design of a precision motion de-amplifier,
+* calibration of an existing precision motion system.
 
-[Dynamic Selection]
+------------------------------------------------------------
 
-Regarding the Hinge Optimization:
+[Slide: Design a Precision Motion De-Amplifier]
 
-The mechanism design focused not only on implementing different concepts, but also on optimizing the flexure hinges to reduce the overall stiffness while remaining within the valid operating range. Parametric studies and optimization procedures were developed to identify the most suitable hinge geometries for the application.
+Introduce the design section of the presentation.
 
-Several hinge types were initially analysed, including circular, leaf-spring, cartwheel, and elliptical hinges, using analytical models from the literature.
+------------------------------------------------------------
 
-The optimization process was guided by the following criteria:
+[Slide: Design Workflow]
 
-* Maximize allowable flexure angle
-* Minimize hinge stiffness
-* Respect analytical-model validity and small-deformation assumptions
-* Avoid material yielding due to stress concentrations
-* Maintain manufacturability
+Describe the overall workflow followed during the design phase.
 
-The final design employed only leaf-spring and circular hinges. Leaf-spring hinges were used in regions with small angular deflections because of their low stiffness, while circular hinges were adopted where higher motion accuracy and larger rotations were required due to their approximately fixed pivot point. This compromise enabled a balance between structural compliance and precise motion guidance.
+------------------------------------------------------------
 
-Overall, the optimization procedure improved the final design and provided insight into practical engineering trade-offs and iterative design processes.
+[Slide: Product Definition]
 
-[Simulation Results]
+Present the customer needs and the application constraints.
 
-Present the results with reference to the original design constraints.
+------------------------------------------------------------
 
-Comment on the results table:
-the input force exceeds the maximum target limit (0.1 N), however it still remains relatively small in absolute terms. Moreover, the overall system performance remains highly positive:
+[Slide: QFD]
 
-* the OUT/IN ratio fully satisfies the specifications,
-* the behaviour is highly linear (deviation below 1%),
-* the overall spatial dimensions remain within the required limits.
+Briefly explain that the QFD methodology translates customer needs into engineering design criteria.
 
-Briefly discuss the frequency-response behaviour.
+------------------------------------------------------------
 
-Briefly mention the standalone images.
+[Slide: Product Decomposition]
 
-Briefly mention the note.
+Describe the decomposition of an existing system into atomic functions.
 
-[AI Usage]
+Emphasize that Product Decomposition was also useful to improve understanding and knowledge of the topic.
 
-Briefly mention this slide without spending excessive time on it (only a few tens of seconds).
+------------------------------------------------------------
 
-[Thank You for Your Attention]
+[Slide: Functional Decomposition]
+
+Clearly describe the hierarchical functional map:
+
+* Blue blocks represent higher-level and more abstract functions.
+* White blocks represent more elementary functions.
+
+------------------------------------------------------------
+
+[Slide: Morphological Combination]
+
+While describing the figure, explicitly connect it to the previous Functional Decomposition slide:
+
+* Blue blocks correspond to higher-level functions.
+* Yellow blocks correspond to elementary functions.
+
+------------------------------------------------------------
+
+[Slide: TRIZ/Example of Contradiction]
+
+Describe the TRIZ methodology and the presented contradiction example.
+
+------------------------------------------------------------
+
+[Slide: Concepts Generation]
+
+This slide is relatively important.
+
+Explain that the number of generated concepts was intentionally balanced:
+
+* large enough to explore different engineering solutions,
+* limited enough to maintain a clear overview of the concepts.
+
+------------------------------------------------------------
+
+[Slide: Single-Stage Mechanical Concept]
+
+Describe the proposed concept and its operating principles.
+
+------------------------------------------------------------
+
+[Slide: Multi-Stage Compliant Mechanism Concepts]
+
+Describe the proposed compliant-mechanism concepts.
+
+Highlight the structural symmetry between input and output used to enable reversible operation.
+
+------------------------------------------------------------
+
+[Slide: Single-Stage Compliant Mechanism Concepts]
+
+Describe the proposed concepts and their design logic.
+
+Highlight again the reversible-operation capability enabled by structural symmetry.
+
+------------------------------------------------------------
+
+[Slide: Robust Decision-Matrix]
+
+Describe the decision-making process and comment on the Decision Matrix.
+
+------------------------------------------------------------
+
+[Slide: Selected Concept]
+
+This is an important slide.
+
+Clearly explain the selected concept and the reasons for its selection.
+
+------------------------------------------------------------
+
+[Slide: Modeling Workflow]
+
+Explain the workflow followed during the modeling phase.
+
+------------------------------------------------------------
+
+[Slide: Kinematic Design]
+
+Describe the main kinematic characteristics of the mechanism.
+
+------------------------------------------------------------
+
+[Slide: Dynamic Design]
+
+Describe the advantages of elastic deformation and the use of flexure hinges.
+
+Regarding hinge optimization:
+
+Different hinge geometries were analysed through analytical models and parametric studies.
+
+The optimization criteria included:
+
+* maximizing allowable flexure angle,
+* minimizing stiffness,
+* avoiding material yielding,
+* maintaining manufacturability,
+* respecting analytical-model validity.
+
+The final design employed leaf-spring and circular hinges to balance compliance, precision, and rotational capability.
+
+Emphasize that the optimization procedure improved both the final design quality and the engineering understanding of practical design trade-offs.
+
+------------------------------------------------------------
+
+[Slide: Material Selection]
+
+Describe the material-selection process and justify the chosen materials.
+
+------------------------------------------------------------
+
+[Slide: Simulation Results]
+
+Present the simulation results with reference to the original design constraints.
+
+Display and comment on the plots.
+
+Create and show a summary table containing:
+
+* design parameters,
+* design constraints,
+* resulting values,
+* acceptability status.
+
+Explain that the input force exceeds the target value of 0.1 N; however, it still remains relatively small in absolute terms.
+
+Emphasize that the overall system performance remains highly positive because:
+
+* the OUT/IN ratio satisfies the specifications,
+* the behaviour is highly linear,
+* the spatial dimensions remain within the required limits.
+
+Discuss the frequency-response behaviour.
+
+Comment briefly on the linearity-deviation criterion.
+
+------------------------------------------------------------
+
+[Slide: Static Calibration of a Precision Motion Amplifier]
+
+Clearly state that this section is independent from the previous design activity.
+
+Explain that the objective is the calibration of an already existing precision motion system.
+
+------------------------------------------------------------
+
+[Slide: Measured System and Experimental Setup]
+
+Describe the slide content while explicitly showing and commenting on the image of the mechanical system.
+
+------------------------------------------------------------
+
+[Slide: Effect of Noise]
+
+Explain that the noise contribution is negligible because its magnitude is significantly smaller than the operative displacement levels.
+
+Display and comment briefly on the plots.
+
+------------------------------------------------------------
+
+[Slide: Static Calibration Results]
+
+Describe the mathematical calibration model and summarize the main results.
+
+Display and comment on the regression-coefficients table together with the standard errors.
+
+------------------------------------------------------------
+
+[Slide: Calibration Conclusion]
+
+IMPORTANT:
+Display both plots:
+
+* the IN-OUT relation plot,
+* the regression-residuals plot.
+
+Emphasize:
+
+* the limited hysteresis of the system,
+* the high linearity of the calibration model.
+
+------------------------------------------------------------
+
+[Slide: AI Usage]
+
+Briefly mention this slide without spending excessive time on it.
+
+------------------------------------------------------------
+
+[Slide: Thank You for Your Attention]
 
 Conclude the presentation by thanking the audience.

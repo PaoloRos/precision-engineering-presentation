@@ -18,7 +18,7 @@
     "href": "index.html#product-definition",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Product Definition",
-    "text": "Product Definition\n\n\nCustomer needs:\n\nStraight input and output motion\nDe-amplification ratio \\(\\text{OUT}:\\text{IN} = 1:20\\)\nDeviation from linear relationship \\(\\leq 5\\%\\)\nReversible motion transmission\n\n\nApplication constraints:\n\nInput stroke \\(\\leq 10 \\,\\mathrm{mm}\\)\nInput force \\(\\leq 0.1 \\,\\mathrm{N}\\)\nSpace envelope \\(\\leq 200 \\times 200 \\times 20 \\,\\mathrm{mm}\\)\nFlat sensing surface \\(\\geq 5 \\times 5 \\,\\mathrm{mm}\\)\nKelvin clamp support"
+    "text": "Product Definition\n\n\nCustomer needs:\n\nStraight input and output motion\nDe-amplification ratio \\(\\text{OUT}:\\text{IN} = 1:20\\)\nLinear relationship with maximum deviation \\(\\leq 5\\%\\)\nReversible motion transmission\n\n\nApplication constraints:\n\nInput stroke \\(\\leq 10 \\,\\mathrm{mm}\\)\nInput force \\(\\leq 0.1 \\,\\mathrm{N}\\)\nSpace envelope \\(\\leq 200 \\times 200 \\times 20 \\,\\mathrm{mm}\\)\nFlat sensing surface \\(\\geq 5 \\times 5 \\,\\mathrm{mm}\\)\nKelvin clamp support"
   },
   {
     "objectID": "index.html#quality-function-deployment-qfd",
@@ -158,7 +158,7 @@
     "href": "index.html#measured-system-and-experimental-setup",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Measured System and Experimental Setup",
-    "text": "Measured System and Experimental Setup\n\n\n\nKelvin-clamp precision mounting with a tension spring for attchment\nPrecision-screw manual actuation\nLIF-based input/output displacement measurement"
+    "text": "Measured System and Experimental Setup\n\n\n\nPassive vibration-isolation bench\nKelvin-clamp precision mounting with a tension spring for attachment\nPrecision-screw manual actuation\nLIF-based input/output displacement measurement"
   },
   {
     "objectID": "index.html#effect-of-noise",
@@ -186,6 +186,6 @@
     "href": "index.html#ai-usage",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "AI Usage",
-    "text": "AI Usage\nAI-based tools were employed to support layout refinement, visual content generation, and presentation optimization.\nIn particular:\n\nChatGPT by OpenAI was used for language refinement, layout optimization, and visual content support;\nGemini via NotebookLM was used to generate the presentation video.\n\nAll generated materials were reviewed and validated by the authors."
+    "text": "AI Usage\nAI-based tools were employed to support layout refinement, visual content generation, and presentation optimization.\nIn particular:\n\nChatGPT by OpenAI was used for language refinement, layout optimization, and visual content support;\n\nAll generated materials were reviewed and validated by the authors."
   }
 ]
