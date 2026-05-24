@@ -283,7 +283,7 @@ Each figure is labeled above with its corresponding concept number.
 ::: {.footer-note}
 The deviation from linearity is calculated over the full-scale ($FS$) output range:
 $$
-\Delta_{\text{linearity}} = \frac{\max(|y_{\text{sim}} - y_{\text{interp}}|)}{FS} \times 100
+\Delta_{\text{linearity}} = \frac{|y_{\text{sim}} - y_{\text{interp}}|}{FS} \times 100
 $$
 :::
 
