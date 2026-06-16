@@ -401,6 +401,10 @@ In particular:
 
 - [ChatGPT by OpenAI](https://openai.com/chatgpt) was used for language refinement, layout optimization, and visual content support;
 
+- [Codex by OpenAI](https://openai.com/it-IT/codex/) was used for code generation and implementation support;
+
+- [ElevenLabs API](https://elevenlabs.io/app/api) was used for audio generation.
+
 **All generated materials were reviewed and validated by the authors**.
 
 # Thank you for your attention!

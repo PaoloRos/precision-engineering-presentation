@@ -1,13 +1,37 @@
+# R / RStudio
 precision-engineering-presentation.Rproj
-.Rproj.user
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
-.positai
+.positai/
 
+# Quarto
 /.quarto/
 **/*.quarto_ipynb
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
 
-/include
-**/DS_Store
+# Generated audio
+/audio/
+
+# Local source assets
+/include/
+
+# OS / editor
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example

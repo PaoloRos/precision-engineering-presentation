@@ -262,9 +262,7 @@ This confirms that the system has limited hysteresis effects and that the calibr
 
 ### AI Usage
 
-AI-based tools were used only as support tools during the preparation of the presentation.
-
-In particular, ChatGPT was used for language refinement, layout optimization, and visual content support.
+AI-based tools were used only as support during the preparation of the presentation.
 
 All generated materials were reviewed and validated by the authors.
 
