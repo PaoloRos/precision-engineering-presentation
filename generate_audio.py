@@ -8,14 +8,15 @@ import urllib.request
 from pathlib import Path
 
 
-DEFAULT_API_VOICE_ID = "JBFqnCBsd6RMkjVDRZzb"
+PREFERRED_VOICE_ID = "Gfpl8Yo74Is0W6cPUWWT"
+FALLBACK_API_VOICE_ID = "JBFqnCBsd6RMkjVDRZzb"
 MODEL_ID = "eleven_multilingual_v2"
 OUTPUT_FORMAT = "mp3_44100_128"
+DEFAULT_VOICE_SPEED = 1.12
 
 INPUT_FILE = Path("presentation-tts-script.md")
-OUT_DIR = Path("audio")
-FINAL_AUDIO = OUT_DIR / "presentation.mp3"
 MAX_CHARS = 9000
+NORMALIZED_SUFFIX = "_normalized"
 SLIDE_PAUSE_SEPARATOR = "\n\n"
 SECTION_PAUSE_SEPARATOR = "\n\n\n\n"
 SECTION_TRANSITION_PREFIXES = (
@@ -82,12 +83,29 @@ def choose_available_voice(api_key):
     except RuntimeError as error:
         print(f"Could not list voices with this API key: {error}")
 
-    print(f"Using ElevenLabs API example voice: {DEFAULT_API_VOICE_ID}")
-    return DEFAULT_API_VOICE_ID
+    print(f"Using ElevenLabs API example voice: {FALLBACK_API_VOICE_ID}")
+    return FALLBACK_API_VOICE_ID
 
 
 def get_configured_voice_id():
-    return os.environ.get("ELEVENLABS_VOICE_ID", DEFAULT_API_VOICE_ID)
+    return os.environ.get("ELEVENLABS_VOICE_ID", PREFERRED_VOICE_ID)
+
+
+def get_configured_voice_speed():
+    return float(os.environ.get("ELEVENLABS_VOICE_SPEED", DEFAULT_VOICE_SPEED))
+
+
+def get_output_dir():
+    return Path(os.environ.get("ELEVENLABS_OUTPUT_DIR", "audio"))
+
+
+def get_final_audio_path(output_dir):
+    return output_dir / os.environ.get("ELEVENLABS_OUTPUT_FILE", "presentation.mp3")
+
+
+def get_sample_paragraph_count():
+    value = os.environ.get("ELEVENLABS_SAMPLE_PARAGRAPHS")
+    return int(value) if value else None
 
 
 def is_section_transition(paragraph):
@@ -100,8 +118,16 @@ def pause_separator(previous_paragraph, next_paragraph):
     return SLIDE_PAUSE_SEPARATOR
 
 
-def split_text_by_paragraphs(text, max_chars):
+def get_paragraphs(text):
     paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
+    sample_count = get_sample_paragraph_count()
+    if sample_count:
+        paragraphs = paragraphs[:sample_count]
+    return paragraphs
+
+
+def split_text_by_paragraphs(text, max_chars):
+    paragraphs = get_paragraphs(text)
     chunks = []
     current = ""
     previous_paragraph = ""
@@ -137,7 +163,7 @@ def split_text_by_paragraphs(text, max_chars):
     return chunks
 
 
-def synthesize_chunk(api_key, voice_id, text, output_path):
+def synthesize_chunk(api_key, voice_id, voice_speed, text, output_path):
     url = (
         f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"
         f"?output_format={OUTPUT_FORMAT}"
@@ -151,6 +177,7 @@ def synthesize_chunk(api_key, voice_id, text, output_path):
             "stability": 0.55,
             "similarity_boost": 0.80,
             "style": 0.15,
+            "speed": voice_speed,
             "use_speaker_boost": True,
         },
     }
@@ -175,9 +202,9 @@ def synthesize_chunk(api_key, voice_id, text, output_path):
         ) from error
 
 
-def synthesize_with_fallback(api_key, voice_id, text, output_path):
+def synthesize_with_fallback(api_key, voice_id, voice_speed, text, output_path):
     try:
-        synthesize_chunk(api_key, voice_id, text, output_path)
+        synthesize_chunk(api_key, voice_id, voice_speed, text, output_path)
         return voice_id
     except RuntimeError as error:
         message = str(error)
@@ -191,12 +218,16 @@ def synthesize_with_fallback(api_key, voice_id, text, output_path):
 
         print("Preferred voice is not available for this plan via API.")
         fallback_voice_id = choose_available_voice(api_key)
-        synthesize_chunk(api_key, fallback_voice_id, text, output_path)
+        synthesize_chunk(api_key, fallback_voice_id, voice_speed, text, output_path)
         return fallback_voice_id
 
 
-def merge_audio_parts(part_files):
-    concat_file = OUT_DIR / "concat.txt"
+def normalized_audio_path(final_audio):
+    return final_audio.with_name(f"{final_audio.stem}{NORMALIZED_SUFFIX}{final_audio.suffix}")
+
+
+def merge_audio_parts(output_dir, final_audio, part_files):
+    concat_file = output_dir / "concat.txt"
     concat_file.write_text(
         "\n".join(f"file '{path.name}'" for path in part_files),
         encoding="utf-8",
@@ -214,54 +245,100 @@ def merge_audio_parts(part_files):
             concat_file.name,
             "-c",
             "copy",
-            FINAL_AUDIO.name,
+            final_audio.name,
         ],
-        cwd=OUT_DIR,
+        cwd=output_dir,
         check=True,
     )
 
 
-def chunk_digest(text):
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+def normalize_loudness(input_audio, output_audio):
+    subprocess.run(
+        [
+            "ffmpeg",
+            "-y",
+            "-i",
+            str(input_audio),
+            "-af",
+            "loudnorm=I=-16:TP=-1.5:LRA=11",
+            "-codec:a",
+            "libmp3lame",
+            "-b:a",
+            "128k",
+            str(output_audio),
+        ],
+        check=True,
+    )
+
+
+def chunk_digest(voice_id, voice_speed, text):
+    settings = {
+        "model_id": MODEL_ID,
+        "voice_id": voice_id,
+        "output_format": OUTPUT_FORMAT,
+        "stability": 0.55,
+        "similarity_boost": 0.80,
+        "style": 0.15,
+        "speed": voice_speed,
+        "use_speaker_boost": True,
+    }
+    payload = json.dumps(settings, sort_keys=True) + "\n" + text
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
 def sidecar_hash_file(audio_path):
     return audio_path.with_suffix(audio_path.suffix + ".sha256")
 
 
-def audio_part_is_current(audio_path, text):
+def audio_part_is_current(audio_path, voice_id, voice_speed, text):
     hash_path = sidecar_hash_file(audio_path)
     if not audio_path.exists() or audio_path.stat().st_size == 0 or not hash_path.exists():
         return False
-    return hash_path.read_text(encoding="utf-8").strip() == chunk_digest(text)
+    return hash_path.read_text(encoding="utf-8").strip() == chunk_digest(
+        voice_id, voice_speed, text
+    )
 
 
-def write_audio_part_hash(audio_path, text):
-    sidecar_hash_file(audio_path).write_text(chunk_digest(text), encoding="utf-8")
+def write_audio_part_hash(audio_path, voice_id, voice_speed, text):
+    sidecar_hash_file(audio_path).write_text(
+        chunk_digest(voice_id, voice_speed, text),
+        encoding="utf-8",
+    )
 
 
 def main():
     api_key = get_api_key()
     voice_id = get_configured_voice_id()
-    OUT_DIR.mkdir(exist_ok=True)
+    voice_speed = get_configured_voice_speed()
+    output_dir = get_output_dir()
+    final_audio = get_final_audio_path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     text = INPUT_FILE.read_text(encoding="utf-8").strip()
     chunks = split_text_by_paragraphs(text, MAX_CHARS)
-    print(f"Generating {len(chunks)} audio part(s) from {len(text)} characters.")
+    print(f"Voice ID: {voice_id}")
+    print(f"Voice speed: {voice_speed}")
+    print(f"Output: {final_audio}")
+    print(f"Generating {len(chunks)} audio part(s).")
 
     part_files = []
     for index, chunk in enumerate(chunks, start=1):
-        output_path = OUT_DIR / f"presentation_part_{index:02d}.mp3"
-        if audio_part_is_current(output_path, chunk):
+        output_path = output_dir / f"presentation_part_{index:02d}.mp3"
+        if audio_part_is_current(output_path, voice_id, voice_speed, chunk):
             print(f"Reusing existing {output_path}")
         else:
             print(f"Generating {output_path} ({len(chunk)} characters)")
-            voice_id = synthesize_with_fallback(api_key, voice_id, chunk, output_path)
-            write_audio_part_hash(output_path, chunk)
+            voice_id = synthesize_with_fallback(
+                api_key, voice_id, voice_speed, chunk, output_path
+            )
+            write_audio_part_hash(output_path, voice_id, voice_speed, chunk)
         part_files.append(output_path)
 
-    merge_audio_parts(part_files)
-    print(f"Done: {FINAL_AUDIO}")
+    merge_audio_parts(output_dir, final_audio, part_files)
+    print(f"Done: {final_audio}")
+    normalized_audio = normalized_audio_path(final_audio)
+    normalize_loudness(final_audio, normalized_audio)
+    print(f"Done: {normalized_audio}")
 
 
 if __name__ == "__main__":
