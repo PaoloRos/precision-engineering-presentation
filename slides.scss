@@ -164,10 +164,21 @@ $body-color: #111;
   color: #444;
 }
 
-.reveal .quarto-title-block .author,
 .reveal .quarto-title-block .date {
   font-size: 0.85em;
   color: #555;
+}
+
+.reveal .quarto-title-block .author {
+  font-size: 1em;
+}
+
+.reveal .quarto-title-block .author-members {
+  display: inline-block;
+  margin-top: 0.3em;
+  font-size: 0.85em;
+  color: #555;
+  line-height: 1.35;
 }
 
 /* =========================

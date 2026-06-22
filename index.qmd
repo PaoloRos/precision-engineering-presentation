@@ -1,7 +1,7 @@
 ---
 title: "Design and Characterization of a Precision Motion System"
 subtitle: "Course of Design of Precision Engineering"
-author: "Group C"
+author: "<span class='author-group'>Group C</span><br><span class='author-members'>Alberto Andreetto (267439), Isacco Libera (268110), Paolo Rossi (265871), Daniele Trisotto (267254)</span>"
 
 date: today
 date-format: "D MMMM YYYY"
