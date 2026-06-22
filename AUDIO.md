@@ -99,11 +99,12 @@ This is different from post-processing with `ffmpeg atempo`: the voice is
 generated faster by ElevenLabs itself, which should sound more natural than
 speeding up an already-generated MP3.
 
-The final loudness is normalized with `ffmpeg loudnorm` so that the perceived
-volume is more consistent:
+The final loudness is normalized with `ffmpeg dynaudnorm` followed by
+`loudnorm` so that the perceived volume is more consistent across the full
+presentation:
 
 ```text
-loudnorm=I=-16:TP=-1.5:LRA=11
+dynaudnorm=f=250:g=15:p=0.90:m=12:s=8,loudnorm=I=-16:TP=-1.5:LRA=7
 ```
 
 By default it uses the selected voice `Gfpl8Yo74Is0W6cPUWWT`. To override it

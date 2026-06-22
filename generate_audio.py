@@ -17,6 +17,7 @@ DEFAULT_VOICE_SPEED = 1.12
 INPUT_FILE = Path("presentation-tts-script.md")
 MAX_CHARS = 9000
 NORMALIZED_SUFFIX = "_normalized"
+LOUDNESS_FILTER = "dynaudnorm=f=250:g=15:p=0.90:m=12:s=8,loudnorm=I=-16:TP=-1.5:LRA=7"
 SLIDE_PAUSE_SEPARATOR = "\n\n"
 SECTION_PAUSE_SEPARATOR = "\n\n\n\n"
 SECTION_TRANSITION_PREFIXES = (
@@ -260,7 +261,7 @@ def normalize_loudness(input_audio, output_audio):
             "-i",
             str(input_audio),
             "-af",
-            "loudnorm=I=-16:TP=-1.5:LRA=11",
+            LOUDNESS_FILTER,
             "-codec:a",
             "libmp3lame",
             "-b:a",
