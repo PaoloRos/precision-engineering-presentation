@@ -149,7 +149,7 @@ Each figure is labeled above with its corresponding concept number.
 :::: {.columns}
 
 ::: {.column width="50%"}
-* Motion amplification achieved through gear transmission
+* Motion amplification achieved through **gear transmission**
 * Gear mechanisms unsuitable for high-precision applications due to **backlash and friction**
 :::
 
@@ -178,26 +178,30 @@ Each figure is labeled above with its corresponding concept number.
 
 ## Single-Stage Compliant Mechanism Concepts
 
-* Single-stage mechanism **integrating** transmission and amplification
-* Same kinematic and compliant principles as the multi-stage architectures
+* One stage only, **integrating** motion transmission and amplification
+* Motion Amplification achieved through **two parallel levers**
+* Same kinematic and compliant principles as multi-stage architectures
 
 :::: {.columns}
 ::: {.column width="50%"}
 ![](./include/images/concept-daniele.png){fig-align="center" width="70%"}
 :::
 ::: {.column width="50%"}
-![](./include/images/concept-paolo.png){fig-align="center" width="50%"}
+![](./include/images/concept-paolo.png){fig-align="center" width="45%"}
 :::
 ::::
 
-## Single-Stage Compliant Mechanism Concepts
+## Lever-Cascade Compliant Mechanism Concepts
+
+* Motion amplification through several **levers in series**
+* Same kinematic and compliant principles as multi-stage architectures
 
 :::: {.columns}
 ::: {.column width="50%"}
-![](./include/images/concept-leonardo.png){fig-align="center" width="70%"}
+![](./include/images/concept-leonardo.png){fig-align="center" width="50%"}
 :::
 ::: {.column width="50%"}
-![](./include/images/concept-isacco.png){fig-align="center" width="70%"}
+![](./include/images/concept-isacco.png){fig-align="center" width="50%"}
 :::
 ::::
 
@@ -206,8 +210,8 @@ Each figure is labeled above with its corresponding concept number.
 :::: {.columns}
 :::: {.column width="50%"}
 * System requirements adopted as **decision criteria**
-* Belief maps used by each group member to evaluate the capability of each concept to satisfy the design criteria
-* Decision matrix used for concept ranking and comparison
+* **Belief maps** used by each group member to evaluate the capability of each concept to satisfy the design criteria
+* **Decision matrix** used for concept ranking and comparison
 :::
 ::: {.column width="50%"}
 ![](./include/images/beliefmap.png){fig-align="center" width="60%"}
@@ -220,7 +224,7 @@ Each figure is labeled above with its corresponding concept number.
 
 :::: {.columns}
 ::: {.column width="50%"}
-* **Single-Stage Compliant Mechanism Concept 2** selected from the decision matrix evaluation
+* **Lever-Cascade Compliant Mechanism Concept 2** selected from the decision matrix evaluation
 * The selected concept was then further analysed and modelled
 :::
 ::: {.column width="50%"}

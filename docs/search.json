@@ -158,7 +158,7 @@
     "href": "index.html#single-stage-compliant-mechanism-concepts",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Single-Stage Compliant Mechanism Concepts",
-    "text": "Single-Stage Compliant Mechanism Concepts\n\nSingle-stage mechanism integrating transmission and amplification\nSame kinematic and compliant principles as the multi-stage architectures"
+    "text": "Single-Stage Compliant Mechanism Concepts\n\nOne stage only, integrating motion transmission and amplification\nMotion Amplification achieved through two parallel levers\nSame kinematic and compliant principles as multi-stage architectures"
   },
   {
     "objectID": "index.html#single-stage-compliant-mechanism-concepts-1",
@@ -179,7 +179,7 @@
     "href": "index.html#selected-concept",
     "title": "Design and Characterization of a Precision Motion System",
     "section": "Selected Concept",
-    "text": "Selected Concept\n\n\n\nSingle-Stage Compliant Mechanism Concept 2 selected from the decision matrix evaluation\nThe selected concept was then further analysed and modelled"
+    "text": "Selected Concept\n\n\n\nLever-Cascade Compliant Mechanism Concept 2 selected from the decision matrix evaluation\nThe selected concept was then further analysed and modelled"
   },
   {
     "objectID": "index.html#modeling-workflow",
@@ -257,5 +257,12 @@
     "title": "Design and Characterization of a Precision Motion System",
     "section": "AI Usage",
     "text": "AI Usage\nAI-based tools were employed to support layout refinement, visual content generation, and presentation optimization.\nIn particular:\n\nChatGPT by OpenAI was used for language refinement, layout optimization, and visual content support;\nCodex by OpenAI was used for code generation and implementation support;\nElevenLabs API was used for audio generation.\n\nAll generated materials were reviewed and validated by the authors."
+  },
+  {
+    "objectID": "index.html#lever-cascade-compliant-mechanism-concepts",
+    "href": "index.html#lever-cascade-compliant-mechanism-concepts",
+    "title": "Design and Characterization of a Precision Motion System",
+    "section": "Lever-Cascade Compliant Mechanism Concepts",
+    "text": "Lever-Cascade Compliant Mechanism Concepts\n\nMotion amplification through several levers in series\nSame kinematic and compliant principles as multi-stage architectures"
   }
 ]

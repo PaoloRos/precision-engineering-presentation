@@ -122,15 +122,19 @@ Another important aspect is the symmetry between the input and output sides. Thi
 
 The following concepts are also based on compliant mechanisms, but they use a single-stage architecture.
 
-In this case, the objective is to integrate motion transmission and de-amplification in the same mechanism, instead of separating them into multiple stages. The design logic is therefore more compact, while still relying on the same principles: flexure hinges, elastic deformation, lever effects, and structural geometric symmetry.
+In this case, the objective is to integrate motion transmission and de-amplification in the same mechanism, instead of separating them into multiple stages.
+
+More specifically, the mechanism uses only one lever stage, with levers arranged in parallel to obtain the required motion ratio.
+
+The design logic is therefore more compact, while still relying on the same principles: flexure hinges, elastic deformation, lever effects, and structural geometric symmetry.
 
 The two concepts shown in this slide propose different ways to arrange the flexure elements and the input-output path. In both cases, the goal is to obtain the required ratio while keeping the motion guided and repeatable.
 
-### Single-Stage Compliant Mechanism Concepts
+### Lever-Cascade Compliant Mechanism Concepts
 
-This slide shows two additional single-stage compliant concepts.
+This slide shows two additional compliant-mechanism concepts based on a lever cascade.
 
-Again, the main design idea is to combine the required motion ratio, the rectilinear guidance, and the compliant transmission into one integrated architecture. The concepts differ mainly in the arrangement of the flexure hinges and the lever arms.
+In these concepts, the motion amplification is obtained through several levers arranged in series. Also in this case, they rely on the same kinematic and compliant principles as the multi-stage architectures.
 
 ### Robust Decision-Making
 
@@ -146,7 +150,7 @@ The results were then collected in the decision matrix. Each criterion was assig
 
 Based on the decision matrix, Concept II was selected.
 
-This concept is a single-stage compliant mechanism, so it integrates motion transmission and de-amplification in one compact architecture. It was selected because it showed the best overall satisfaction value.
+This concept is a lever-cascade compliant mechanism. It uses several compliant lever stages in series to obtain the required motion amplification, and it was selected because it showed the best overall satisfaction value.
 
 After the selection, this concept was further analyzed and developed into the final engineering model.
 
